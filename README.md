@@ -4,12 +4,9 @@ sudo apt install tmux python-pip
 sudo pip install powerline-shell
 ```
 
-
-Add this block to your .bash_aliases file.
+Create Symbolic links.
 ```bash
-if [ -f ~/git/my_dot_files/my_bash_aliases ]; then
-    . ~/git/my_dot_files/my_bash_aliases
-fi
+ln -sf ~/git/my_dot_files/.bash_aliases ~/.bash_aliases
 ```
 
 Add this block to your .bashrc file.
@@ -21,5 +18,12 @@ fi
 
 Copy off powerline config.
 ```
-cp ~/git/my_dot_files/.powerline-shell.json ~/.powerline-shell.json
+ln -sf ~/git/my_dot_files/.powerline-shell.json ~/.powerline-shell.json
+```
+
+Clone down vundle and create Symbolic link for your vimrc file and install plugins
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -sf ~/git/my_dot_files/.vimrc ~/.vimrc
+vim +PluginInstall +qall
 ```
