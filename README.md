@@ -20,4 +20,5 @@ vim +PluginInstall +qall
 To update your setup enter the following commands.
 ```bash
 vim +PluginInstall +qall
+sudo pip install powerline-shell --upgrade
 ```
