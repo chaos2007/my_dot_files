@@ -1,7 +1,7 @@
 requirements
 ```
-sudo apt install tmux python-pip vim tree
-sudo pip install powerline-shell
+sudo apt install tmux python-pip vim tree python3-dev python3-pip
+sudo pip install powerline-shell thefuck
 ```
 
 Create Symbolic links.
@@ -21,4 +21,5 @@ To update your setup enter the following commands.
 ```bash
 vim +PluginInstall +qall
 sudo pip install powerline-shell --upgrade
+sudo pip install thefuck --upgrade
 ```
