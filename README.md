@@ -1,9 +1,9 @@
 requirements
 ```
-sudo apt install tmux python-pip git vim tree python3-dev python3-pip
-sudo pip install powerline-shell thefuck
+sudo ./install -d ./ -c packages.conf.yaml -p dotbot_plugin_aptget/aptget.py
+./install -d ./ -c pip_install.conf.yaml -p dotbot-pip/pip.py
+./install
 ```
-
 
 Clone down vundle and create Symbolic link for your vimrc file and install plugins
 ```bash
@@ -14,6 +14,4 @@ vim +PluginInstall +qall
 To update your setup enter the following commands.
 ```bash
 vim +PluginInstall +qall
-sudo pip install powerline-shell --upgrade
-sudo pip install thefuck --upgrade
 ```

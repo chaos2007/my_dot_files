@@ -1,0 +1,2 @@
+- aptget: [tmux, python-pip, git, vim, tree, python3-dev, python3-pip]
+

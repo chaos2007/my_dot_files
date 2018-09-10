@@ -1,0 +1,3 @@
+- pip:
+    file: requirements.txt
+    binary: pip3
