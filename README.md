@@ -1,6 +1,6 @@
 requirements
 ```
-sudo apt install tmux python-pip vim tree python3-dev python3-pip
+sudo apt install tmux python-pip git vim tree python3-dev python3-pip
 sudo pip install powerline-shell thefuck
 ```
 
