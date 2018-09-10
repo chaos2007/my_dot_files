@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.powerline-shell.json: powerline-shell.json
+    ~/.bash_aliases: bash_aliases
+    ~/.my_bash_profile: my_bash_profile
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
