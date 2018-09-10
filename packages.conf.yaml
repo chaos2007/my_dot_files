@@ -1,2 +1,6 @@
+- shell:
+  - wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb; dpkg -i bat_0.6.1_amd64.deb; rm bat_0.6.1_amd64.deb
+  - wget https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy; mv diff-so-fancy ~/bin/diff-so-fancy
+
 - aptget: [tmux, python-pip, git, vim, tree, python3-dev, python3-pip]
 
