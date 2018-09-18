@@ -1,16 +1,12 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-"Start Plugin section
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-"End Plugin section
+call plug#begin('~/.config/nvim/plugged')
+Plug 'scrooloose/nerdtree'
+call plug#end()
 
 set nu
 set rnu
@@ -21,4 +17,3 @@ set tabstop=4
 set autoindent
 set wildmode=longest,list
 set cc=80
-
