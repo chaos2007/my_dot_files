@@ -1,11 +1,13 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ['~']
 
 - link:
     ~/.vimrc: vimrc
+    ~/.config/nvim/init.vim: init.vim
     ~/.powerline-shell.json: powerline-shell.json
     ~/.bash_aliases: bash_aliases
     ~/.my_bash_profile: my_bash_profile
@@ -13,7 +15,9 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - rm -rf ~/.vim/bundle/Vundle.vim; git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  - vim +PluginInstall +qall
+  - rm -rf ~/.config/nvim/bundle/Vundle.vim; git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+  - \vim +PluginInstall +qall
+  - nvim +PluginInstall +qall
   - wget https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy; mv diff-so-fancy ~/bin/diff-so-fancy; chmod +x ~/bin/diff-so-fancy
   - git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
   - git config --global color.ui true

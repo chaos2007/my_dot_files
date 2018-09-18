@@ -1,5 +1,5 @@
 - shell:
   - wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb; dpkg -i bat_0.6.1_amd64.deb; rm bat_0.6.1_amd64.deb
 
-- aptget: [tmux, python-pip, git, vim, tree, python3-dev, python3-pip]
+- aptget: [neovim, tmux, python-pip, git, vim, tree, python3-dev, python3-pip, clang, cmake]
 

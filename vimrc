@@ -29,3 +29,11 @@ filetype plugin indent on    " required
 
 set nu
 set rnu
+set showmatch
+set mouse=v
+set hlsearch
+set tabstop=4
+set autoindent
+set wildmode=longest,list
+set cc=80
+
