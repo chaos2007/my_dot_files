@@ -6,6 +6,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'w0rp/ale'
+Plug 'airblade/vim-gitgutter'
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
 set nu
@@ -17,4 +22,9 @@ set tabstop=4
 set autoindent
 set wildmode=longest,list
 set cc=80
+map <C-o> :NERDTreeToggle<CR>
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
 
