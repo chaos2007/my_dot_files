@@ -11,6 +11,7 @@
     ~/.powerline-shell.json: powerline-shell.json
     ~/.bash_aliases: bash_aliases
     ~/.my_bash_profile: my_bash_profile
+    ~/.tmux.conf: tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

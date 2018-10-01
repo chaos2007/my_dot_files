@@ -16,7 +16,7 @@ call plug#end()
 set nu
 set rnu
 set showmatch
-set mouse=v
+set mouse=a
 set hlsearch
 set tabstop=4
 set autoindent
