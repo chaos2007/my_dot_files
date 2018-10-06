@@ -6,6 +6,11 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+
 eval $(thefuck --alias 2>/dev/null)
 eval $(thefuck --alias crap 2>/dev/null)
 shopt -s histappend
