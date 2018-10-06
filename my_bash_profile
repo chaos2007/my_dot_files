@@ -14,4 +14,5 @@ fi
 eval $(thefuck --alias 2>/dev/null)
 eval $(thefuck --alias crap 2>/dev/null)
 shopt -s histappend
+setxkbmap -layout us -option ctrl:nocaps
 
