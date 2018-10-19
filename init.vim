@@ -12,7 +12,7 @@ Plug 'itchyny/lightline.vim'
 " Linting 
 Plug 'w0rp/ale'
 " Lightline integration for ALE
-Plug 'maximbaz/ligtline-ale'
+Plug 'maximbaz/lightline-ale'
 " :) Let's me do :SudoWrite when I forget to do sudo
 Plug 'tpope/vim-eunuch'
 " Shows git diff in the gutter
@@ -32,7 +32,7 @@ Plug 'mileszs/ack.vim'
 " Easily comment out code. 'gc' and motion or selected text
 Plug 'tpope/vim-commentary'
 " Fuzzy file search
-Plug 'kien/ctrlp'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 set nu
@@ -81,7 +81,7 @@ let g:lightline.component_type = {
    \     'linter_errors': 'error',
    \     'linter_ok': 'left',
    \ }
-"let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
 let g:lightline#ale#indicator_warnings = "▲:"
 let g:lightline#ale#indicator_errors = "✘:"
 let g:lightline#ale#indicator_ok = "✔"
