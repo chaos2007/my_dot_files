@@ -88,3 +88,9 @@ let g:lightline#ale#indicator_ok = "✔"
 
 colorscheme dracula
 
+" Leader Shortcuts
+let mapleader=","
+nnoremap <leader>af :ALEFirst<CR>
+nnoremap <leader>an :ALENext<CR>
+nnoremap <leader>ap :ALEPrevious<CR>
+
