@@ -33,6 +33,8 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-commentary'
 " Fuzzy file search
 Plug 'ctrlpvim/ctrlp.vim'
+" Rust plugin
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 set nu
