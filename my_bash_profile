@@ -16,4 +16,5 @@ eval $(thefuck --alias crap 2>/dev/null)
 shopt -s histappend
 setxkbmap -layout us -option ctrl:nocaps
 export TERM='screen-256color'
+export PATH=$HOME/.cargo/bin:$PATH
 

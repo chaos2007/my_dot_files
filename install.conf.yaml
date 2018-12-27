@@ -15,6 +15,7 @@
     ~/.editorconfig: editorconfig
 
 - shell:
+  - curl https://sh.rustup.rs -sSf | bash -s -- -y
   - [git submodule update --init --recursive, Installing submodules]
   - \vim +PlugInstall +qall
   - \vim +PlugUpdate +qall
