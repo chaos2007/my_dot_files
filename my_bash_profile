@@ -10,9 +10,10 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-
 eval $(thefuck --alias 2>/dev/null)
 eval $(thefuck --alias crap 2>/dev/null)
+eval $(thefuck --alias damn 2>/dev/null)
+eval $(thefuck --alias dang 2>/dev/null)
 shopt -s histappend
 setxkbmap -layout us -option ctrl:nocaps
 export TERM='screen-256color'
