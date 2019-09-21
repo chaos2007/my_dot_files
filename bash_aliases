@@ -8,7 +8,7 @@ alias ping='prettyping'
 alias please='sudo'
 alias sa='source ~/.bashrc'
 alias ssh_no_key='ssh -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no'
-alias tmux='tmx2 new -A -s work'
+alias tmux='tmux new -A -s work'
 run_until_fail() {
     iteration=0
     while $@; do
