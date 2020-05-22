@@ -1,5 +1,5 @@
 function _update_ps1() {
-    PS1="$($HOME/go/bin/powerline-go -error $?)"
+    eval "$($HOME/go/bin/powerline-go -error $? -shell bash -eval -modules venv,user,ssh,cwd,git,jobs,root)"
 }
 
 if [ "$TERM" != "linux" ] && [ -f "$HOME/go/bin/powerline-go" ]; then
